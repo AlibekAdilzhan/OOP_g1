@@ -17,7 +17,32 @@ class Vector3:
         else:
             return False
 
+    def __lt__(self, v):
+        d1 = (self.a**2 + self.b**2 + self.c**2)**(0.5)
+        d2 = (v.a**2 + v.b**2 + v.c**2)**(0.5)
+        if d1 < d2:
+            return True
+        else:
+            return False
 
-v1 = Vector3(1, 0, 2)
-v2 = Vector3(1, 0, 2)
-print(v1 == v2)
+    def __le__(self, v):
+        d1 = (self.a**2 + self.b**2 + self.c**2)**(0.5)
+        d2 = (v.a**2 + v.b**2 + v.c**2)**(0.5)
+        if d1 <= d2:
+            return True
+        else:
+            return False
+
+# a1 = int(input())
+# b1 = int(input())
+# c1 = int(input())
+# a2 = int(input())
+# b2 = int(input())
+# c2 = int(input())
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+v1 = Vector3(*a)
+v2 = Vector3(*b)
+print(v1 <= v2)
