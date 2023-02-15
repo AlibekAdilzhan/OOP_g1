@@ -7,9 +7,11 @@ class Car:
     def mark(self):
         return f"Mark is {self.__mark}"
 
-    # @mark.setter
-    # def mark(self, new_mark):
-    #     print("you can't change mark")
+    @mark.setter
+    def mark(self, new_mark):
+        print("you can't change mark")
+        return
+        self.__mark = new_mark
 
 
 c1 = Car("Mersedes", "Nurik")
