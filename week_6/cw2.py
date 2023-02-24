@@ -1,11 +1,11 @@
-def get_sum(mylist):
-    s = 0
-    for x in mylist:
-        s += x
-    return s - 1
+s1 = "abceedg"
+s2 = "ebc"
 
+n = len(s2)
+is_substr = False
+for i in range(len(s1) - len(s2) + 1):
+    if s1[i : i + n] == s2:
+        is_substr = True
+        break
 
-list1 = [1, 2, 3, 4]
-res = get_sum(list1)
-assert res == 10, "something is wrong"
-
+print(is_substr)

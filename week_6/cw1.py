@@ -1,9 +1,8 @@
-mylist = [1, 2, 3, 4, 5, 6, 7]
-
+s = "ab12vs41"
 c = 0
-for x in mylist:
-    if x % 2 == 0:
-        c = c + 1
+
+for x in s:
+    if x.isdigit() == True:
+        c = c + int(x)
 
 print(c)
-
