@@ -1,0 +1,2 @@
+1. correct parantheses
+2. reverse string using stack
