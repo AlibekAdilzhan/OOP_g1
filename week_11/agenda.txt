@@ -1,0 +1,4 @@
+1. what is a graph
+2. adjacency matrix
+3. bfs, dfs
+4. problems: number of connected components, find cycle
